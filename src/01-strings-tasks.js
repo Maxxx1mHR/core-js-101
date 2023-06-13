@@ -236,7 +236,6 @@ function getRectangleString(width, height) {
   }
   return res;
 }
-console.log(getRectangleString(6, 4));
 
 /**
  * Encode specified string with ROT13 cipher
@@ -271,9 +270,8 @@ function encodeToRot13(/* str */) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(value) {
-  // throw new Error('Not implemented');
-  return typeof value;
+function isString(/* value */) {
+  throw new Error('Not implemented');
 }
 
 /**
