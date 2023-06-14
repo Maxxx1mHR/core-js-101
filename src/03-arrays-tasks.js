@@ -552,7 +552,7 @@ function getElementByIndexes(/* arr, indexes */) {
  *
  */
 function swapHeadAndTail(/* arr */) {
-  // return arr.reverse();
+  throw new Error('Not implemented');
 }
 
 module.exports = {
