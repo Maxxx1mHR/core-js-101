@@ -34,8 +34,8 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(len) {
+  return [...Array(len)].map((item, index) => index * 2 + 1);
 }
 
 /**
@@ -195,9 +195,18 @@ function getTail(arr, n) {
  *    +'20,21,22,23,24\n'
  *    +'30,31,32,33,34'
  */
-function toCsvText(/* arr */) {
-  throw new Error('Not implemented');
+function toCsvText(arr) {
+  return arr.map((item) => item.join(',')).join('\n');
 }
+
+// const a = [
+//   [0, 1, 2, 3, 4],
+//   [10, 11, 12, 13, 14],
+//   [20, 21, 22, 23, 24],
+//   [30, 31, 32, 33, 34],
+// ];
+
+// console.log(a.map((item) => item.join(',')).join('\n'));
 
 /**
  * Transforms the numeric array into the according array of squares:
@@ -513,8 +522,8 @@ function group(/* array, keySelector, valueSelector */) {
  *   [[1, 2], [3, 4], [5, 6]], (x) => x     =>   [ 1, 2, 3, 4, 5, 6 ]
  *   ['one','two','three'], (x) => x.split('')  =>   ['o','n','e','t','w','o','t','h','r','e','e']
  */
-function selectMany(/* arr, childrenSelector */) {
-  throw new Error('Not implemented');
+function selectMany(arr, childrenSelector) {
+  return arr.map(childrenSelector).flat();
 }
 
 /**
